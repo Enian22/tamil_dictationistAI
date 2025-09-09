@@ -1,7 +1,6 @@
-# Dictationist Agentic AI for Tamil YouTube Videos
+# DictationistAI for Tamil YouTube Videos
 
-This project is an **end-to-end AI pipeline** for processing YouTube videos into **knowledge-enhanced Tamil & English subtitles** and enabling **RAG-based Q&A**.  
-It integrates **audio transcription, metadata scraping, Named Entity Recognition (NER), knowledge base construction, and agentic subtitle refinement** into a single automated system.
+This project is an **end-to-end AI pipeline** for processing YouTube videos into **knowledge-enhanced Tamil & English subtitles** and enabling **RAG-based Q&A**. It integrates **audio transcription, metadata scraping, Named Entity Recognition (NER), knowledge base construction, and agentic subtitle refinement** into a single automated system.
 
 ---
 
@@ -25,8 +24,8 @@ It integrates **audio transcription, metadata scraping, Named Entity Recognition
 ```mermaid
 ---
 config:
-  theme: forest
-  look: neo
+  theme: mc
+  look: classic
   layout: dagre
 ---
 flowchart TD

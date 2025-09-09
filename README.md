@@ -18,11 +18,6 @@ It integrates **audio transcription, metadata scraping, Named Entity Recognition
 ✅ **Retrieval-Augmented Generation (RAG) Q&A** in **Tamil & English**  
 ✅ **Ollama Integration** for LLM-powered reasoning with **Gemma 12B**  
 
----
-
-## Architecture
-
-```mermaid
 flowchart TD
     A[YouTube URL] --> B[Audio Extraction (yt-dlp + ffmpeg)]
     B --> C[Transcription (WhisperX, Tamil aligned)]

@@ -28,7 +28,7 @@ config:
   look: classic
   layout: dagre
 ---
-flowchart TD
+flowchart LR
     A["YouTube URL"] --> B{"Audio Extraction: yt-dlp + ffmpeg"} & D{"Metadata + Page Scraping"}
     B --> C{"Transcription: WhisperX, Tamil aligned"}
     D --> E{"LLM NER Extraction"} & J["ChromaDB Knowledge Base"]
@@ -39,7 +39,6 @@ flowchart TD
     F --> J
     J --> K{"RAG Q&A Function"}
     I --> G
-
 ```
 
 ---

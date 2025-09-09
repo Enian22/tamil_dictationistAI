@@ -24,20 +24,18 @@ It integrates **audio transcription, metadata scraping, Named Entity Recognition
 
 ```mermaid
 flowchart TD
-    A[YouTube URL] --> B[Audio Extraction (yt-dlp + ffmpeg)]
-    B --> C[Transcription (WhisperX, Tamil aligned)]
-    A --> D[Metadata + Page Scraping]
-    D --> E[LLM NER Extraction]
-    E --> F[Entity Web Search + Context]
-    C --> G[Agentic Tamil Subtitle Agent]
-    G --> H[English Subtitle Translation]
+    A[YouTube URL] --> B{Audio Extraction (yt-dlp + ffmpeg)}
+    B --> C{Transcription (WhisperX, Tamil aligned)}
+    A --> D{Metadata + Page Scraping}
+    D --> E{LLM NER Extraction}
+    E --> F{Entity Web Search + Context}
+    C --> G{Agentic Tamil Subtitle Agent}
+    G --> H{English Subtitle Translation}
     G & H --> I[Error Memory KB]
     D & E & F --> J[ChromaDB Knowledge Base]
-    J --> K[RAG Q&A Function]
+    J --> K{RAG Q&A Function}
     I --> G
 ```
-
----
 
 ---
 
